@@ -1,5 +1,33 @@
 .App {
-  text-align: center;
+    margin: auto;
+    height: 100vh;
+  display: grid;
+  grid-template-rows: 60px 1fr;
+  grid-template-columns: 200px 1fr;
+  grid-gap: 1vw;
+  grid-template-areas:
+          "header header"
+          "navbar content";
 }
 
+.header {
+  grid-area: header;
+  background-color: dimgray;
+}
 
+.navbar {
+  grid-area: navbar;
+  background-color: dimgray;
+}
+.navbar_div{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    grid-gap: 2vw;
+    font-size: 1.5vw;
+    padding: .5em;
+    //background: gold;
+}
+.content {
+  grid-area: content;
+  background-color: dimgray;
+}

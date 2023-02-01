@@ -1,15 +1,15 @@
-
+import React from 'react';
 import './App.css';
 import Header from "./Components/Header";
-import LinkBar from "./Components/LinkBar";
-import Content from "./Components/Content";
+import Navbar from "./Components/Navbar";
+import Profile from "./Components/Profile";
 
 function App() {
   return (
     <div className="App">
-       <Header />
-       <LinkBar />
-       <Content />
+       <Header  />
+       <Navbar  />
+       <Profile  />
     </div>
   );
 }
