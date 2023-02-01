@@ -1,5 +1,30 @@
 .App {
-  text-align: center;
+  margin: 0 auto;
+  width: 1000px;
+  display: grid;
+grid-template-rows: 60px 1fr;
+  grid-template-columns: 2fr 10fr;
+  grid-gap: 10px;
+  grid-template-areas:
+          "header header"
+          "links content";
 }
 
+.header {
+  grid-area: header;
+  background-color: aqua;
+}
+.links {
 
+  grid-area: links;
+  grid-column: auto;
+  background-color: cadetblue;
+  display: flex;
+  flex-direction: column;
+
+}
+.content {
+
+  grid-area: content;
+background-color: green;
+}
