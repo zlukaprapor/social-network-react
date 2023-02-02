@@ -1,0 +1,12 @@
+.navbar {
+    grid-area: navbar;
+    background-color: dimgray;
+}
+.navbar_div{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    grid-gap: 2vw;
+    font-size: 1.5vw;
+    padding: .5em;
+//background: gold;
+}
