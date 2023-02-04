@@ -1,0 +1,17 @@
+.posts {
+    grid-area:posts;
+    background-color: whitesmoke;
+
+}
+.new_post{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.my_post{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}

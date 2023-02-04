@@ -1,13 +1,14 @@
 .App {
     margin: auto;
     height: 100vh;
-  display: grid;
-  grid-template-rows: 60px 1fr;
-  grid-template-columns: 200px 1fr;
-  grid-gap: 1vw;
-  grid-template-areas:
+    display: grid;
+    grid-template-rows: 50px 350px 1fr;
+    grid-template-columns: 200px 1fr;
+    //grid-gap: 1vw;
+    grid-template-areas:
           "header header"
-          "navbar content";
+          "profile profile"
+          "navbar posts"
 }
 
 
