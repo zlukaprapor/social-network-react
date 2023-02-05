@@ -14,9 +14,8 @@
 }
 .img_avatar {
     position: absolute;
-    top: 200px;
+    top: 155px;
     left: 100px;
-
     border: 3px solid darkcyan;
     height: 250px;
     width: 250px;
@@ -24,6 +23,6 @@
 }
 .text {
     position: absolute;
-    top: 460px;
-    left: 170px;
+    top: 160px;
+    left: 10px;
 }
