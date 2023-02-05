@@ -4,6 +4,7 @@ import Header from "./Components/Header";
 import Navbar from "./Components/Navbar";
 import Profile from "./Components/Profile";
 import Posts from "./Components/Posts";
+import Messengers from "./Components/Messengers";
 
 function App() {
     return (
@@ -11,7 +12,11 @@ function App() {
             <Header/>
             <Navbar/>
             <Profile/>
-            <Posts/>
+            <div className="App_content">
+                <Posts/>
+                {/*<Messengers />*/}
+            </div>
+
         </div>
     );
 }

@@ -4,11 +4,14 @@
     display: grid;
     grid-template-rows: 50px 350px 1fr;
     grid-template-columns: 200px 1fr;
-/ / grid-gap: 1 vw;
+  //grid-gap: 1 vw;
     grid-template-areas:
           "header header"
           "profile profile"
-          "navbar posts"
+          "navbar content"
 }
-
+.App_content {
+    grid-area: content;
+    background-color: whitesmoke;
+}
 

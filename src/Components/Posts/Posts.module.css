@@ -1,9 +1,3 @@
-.posts {
-    grid-area: posts;
-    background-color: whitesmoke;
-
-}
-
 .new_post {
     display: flex;
     flex-direction: column;
