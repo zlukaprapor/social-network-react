@@ -2,6 +2,7 @@
     grid-area: header;
     background-color: cornflowerblue;
 }
+
 .logo {
     position: absolute;
     top: 0px;
@@ -9,7 +10,8 @@
     width: auto;
     height: 70px;
 }
-.text_logo{
+
+.text_logo {
     position: absolute;
     top: -10px;
     left: 150px;

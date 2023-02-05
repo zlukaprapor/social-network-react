@@ -4,7 +4,7 @@
     display: grid;
     grid-template-rows: 50px 350px 1fr;
     grid-template-columns: 200px 1fr;
-    //grid-gap: 1vw;
+/ / grid-gap: 1 vw;
     grid-template-areas:
           "header header"
           "profile profile"
