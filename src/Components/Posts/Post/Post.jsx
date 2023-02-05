@@ -1,6 +1,6 @@
 import React from "react";
 import s from "./Post.module.css"
-import avatar from "../../Image/pngegg.png"
+import avatar from "../../../Image/pngegg.png"
 
 const Post = ({post, messeges, like}) => {
     return (
