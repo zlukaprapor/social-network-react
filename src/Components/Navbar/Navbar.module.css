@@ -1,23 +1,24 @@
 .navbar {
     grid-area: navbar;
-    background-color: whitesmoke;
+    margin-left: 10px;
 }
 
 .item {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
-    grid-gap: 2vw;
-    font-size: 1.5vw;
-    padding: .5em;
-  //background: gold;
-}
-
-.item a {
+    grid-template-columns: 1fr;
+    grid-gap: 5vw;
+    font-size: 2.0vw;
+    padding: 1.5em;
     color: blue;
     text-decoration: none;
+
 }
 
+.navbar .noActive{
+    color: #6d6e71;
+}
 
  .navbar .active {
-    color: gold;
+     color: #7d6e89;
+     border-bottom: 2px solid #f1f2f2;
 }

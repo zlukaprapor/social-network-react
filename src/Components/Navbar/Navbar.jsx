@@ -4,35 +4,42 @@ import { NavLink} from "react-router-dom";
 
 const Navbar = () => {
     let activeClassName = s.active
-
+    let noActiveClassName = s.noActive
     return (
         <nav className={s.navbar}>
             <div className={s.item}>
-                <NavLink to="/profile"
+                <NavLink to="/myNewsfeed"
                          className={({isActive}) => (
-                             isActive ? activeClassName : 'inactive')}>
-                    Profile
+                             isActive ? activeClassName : noActiveClassName)}>
+                    My Newsfeed
                 </NavLink>
-                <NavLink to="/messengers"
+                <NavLink to="/friends"
                          className={({isActive}) => (
-                             isActive ? activeClassName : 'inactive')}>
+                             isActive ? activeClassName : noActiveClassName)}>
+                    Friends
+                </NavLink>
+                <NavLink to="/messages"
+                         className={({isActive}) => (
+                             isActive ? activeClassName : noActiveClassName)}>
                     Messages
                 </NavLink>
-                <NavLink to="/news"
-                         className={({isActive}) => (
-                             isActive ? activeClassName : 'inactive')}>
-                    News
-                </NavLink>
+
                 <NavLink to="/music"
                          className={({isActive}) => (
-                             isActive ? activeClassName : 'inactive')}>
+                             isActive ? activeClassName : noActiveClassName)}>
                     Music
                 </NavLink>
-                <NavLink to="/settings"
+                <NavLink to="/image"
                          className={({isActive}) => (
-                             isActive ? activeClassName : 'inactive')}>
-                    Settings
+                             isActive ? activeClassName : noActiveClassName)}>
+                   Image
                 </NavLink>
+                <NavLink to="/video"
+                         className={({isActive}) => (
+                             isActive ? activeClassName : noActiveClassName)}>
+                    Video
+                </NavLink>
+
             </div>
         </nav>
     )

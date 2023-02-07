@@ -4,28 +4,30 @@ import './App.css';
 import Header from "./Components/Header";
 import Navbar from "./Components/Navbar";
 import Profile from "./Components/Profile";
-import Posts from "./Components/Posts";
-import Messengers from "./Components/Messengers";
-import News from "./Components/News";
-import Musics from "./Components/Musics";
-import Settings from "./Components/Settings";
+import MyNewsfeed from "./Components/MyNewsfeed";
+import Friends from "./Components/Friends";
+import Messages from "./Components/Messages";
+import Music from "./Components/Music";
+import Image from "./Components/Image";
+import Video from "./Components/Video";
+
 
 function App() {
     return (
         <BrowserRouter>
             <div className="App">
                 <Header/>
-                <Navbar/>
                 <Profile/>
-                <div className="App_content">
-                    <Routes>
-                        <Route path='/profile' element={<Posts/>}/>
-                        <Route path='/messengers' element={<Messengers/>}/>
-                        <Route path='/news' element={<News/>}/>
-                        <Route path='/music' element={<Musics/>}/>
-                        <Route path='/settings' element={<Settings/>}/>
-                    </Routes>
-                </div>
+                <Navbar/>
+                <Routes>
+                        <Route path='/myNewsfeed' element={<MyNewsfeed/>}/>
+                        <Route path='/friends' element={<Friends/>}/>
+                        <Route path='/messages' element={<Messages/>}/>
+                        <Route path='/music' element={<Music/>}/>
+                        <Route path='/image' element={<Image/>}/>
+                        <Route path='/video' element={<Video/>}/>
+                </Routes>
+
             </div>
         </BrowserRouter>
     );

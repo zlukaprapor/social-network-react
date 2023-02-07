@@ -1,28 +1,36 @@
 .profile {
     grid-area: profile;
-    background-color: whitesmoke;
+    margin-left: 10px;
 
 }
-.img{
+
+.card {
     display: block;
-    margin-left: auto;
-    margin-right: auto;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    padding-top: 10px;
 
-    max-width: 100%;
-    height: auto;
+    background: linear-gradient(to bottom, rgba(39,170,225,.8), rgba(28,117,188,.2)), url(../../Image/1.jpg) no-repeat;
+    background-size: cover;
+    width: 100%;
+    min-height: 110px;
+    border-radius: 4px;
+    color: #fff;
 
 }
-.img_avatar {
-    position: absolute;
-    top: 155px;
-    left: 100px;
-    border: 3px solid darkcyan;
-    height: 250px;
-    width: 250px;
+.photo {
+    border: 7px solid #fff;
+    float: left;
+    margin-right: 20px;
+    position: relative;
+    top: -30px;
+    height: 70px;
+    width: 70px;
     border-radius: 50%;
+
 }
-.text {
-    position: absolute;
-    top: 160px;
-    left: 10px;
+
+.text{
+    font-size: 25px;
+    color: whitesmoke;
 }
