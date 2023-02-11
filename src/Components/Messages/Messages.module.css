@@ -1,0 +1,12 @@
+.chatroom{
+    display: grid;
+    grid-area: content;
+    grid-template-columns: 1fr 1fr;
+
+}
+.contact{
+    text-decoration: none;
+}
+.messages{
+
+}

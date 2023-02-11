@@ -7,11 +7,12 @@
     grid-gap: 1vw;
     grid-template-areas:
           "header header header"
-          "profile 123 123"
-          "navbar 123 123"
+          "profile content 123"
+          "navbar content 123"
 
 }
 
-a {
+a, ul, li {
     text-decoration: none;
+    list-style: none;
 }
