@@ -12,7 +12,9 @@ import Image from "./Components/Image";
 import Video from "./Components/Video";
 
 
-function App() {
+
+function App(p) {
+
     return (
         <BrowserRouter>
             <div className="App">
@@ -22,7 +24,7 @@ function App() {
                 <Routes>
                         <Route path='/myNewsfeed' element={<MyNewsfeed/>}/>
                         <Route path='/friends' element={<Friends/>}/>
-                        <Route path='/messages' element={<Messages/>}/>
+                        <Route path='/messages' element={<Messages messages={p.messages} contacts={p.contacts}/>}/>
                         <Route path='/music' element={<Music/>}/>
                         <Route path='/image' element={<Image/>}/>
                         <Route path='/video' element={<Video/>}/>

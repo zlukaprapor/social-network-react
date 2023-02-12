@@ -3,17 +3,18 @@ import s from "./Messages.module.css"
 import ContactList from "./ContactList";
 import MessagesList from "./MessagesList";
 
-const Messages = () => {
+const Messages = ({contacts, messages}) => {
+
     return (
         <div className={s.chatroom}>
             <div className={s.contact}>
                <ul>
-                   <ContactList />
+                   <ContactList contacts={contacts} />
                </ul>
             </div>
             <div className={s.messages}>
                <ul>
-                   <MessagesList />
+                   <MessagesList messages={messages} />
                </ul>
             </div>
         </div>
