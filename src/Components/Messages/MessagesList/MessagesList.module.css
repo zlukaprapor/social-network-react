@@ -1,0 +1,24 @@
+.li{
+
+}
+
+.left{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    background: rgba(141,198,63, .1);
+    margin-left: 50px;
+    padding: 5px 10px;
+    position: relative;
+    border-radius: 10px;
+}
+.right{
+    display: flex;
+    flex-direction: row;
+     justify-content: end;
+    background: rgba(141,198,63, .1);
+    margin-left: 50px;
+    padding: 5px 10px;
+    position: relative;
+    border-radius: 10px;
+}

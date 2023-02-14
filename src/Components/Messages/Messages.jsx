@@ -8,12 +8,12 @@ const Messages = ({contacts, messages}) => {
     return (
         <div className={s.chatroom}>
             <div className={s.contact}>
-               <ul>
+               <ul className={s.ul}>
                    <ContactList contacts={contacts} />
                </ul>
             </div>
-            <div className={s.messages}>
-               <ul>
+            <div>
+               <ul className={s.ul}>
                    <MessagesList messages={messages} />
                </ul>
             </div>

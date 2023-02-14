@@ -13,7 +13,7 @@ import Video from "./Components/Video";
 
 
 
-function App(p) {
+function App({state}) {
 
     return (
         <BrowserRouter>
@@ -24,7 +24,10 @@ function App(p) {
                 <Routes>
                         <Route path='/myNewsfeed' element={<MyNewsfeed/>}/>
                         <Route path='/friends' element={<Friends/>}/>
-                        <Route path='/messages' element={<Messages messages={p.messages} contacts={p.contacts}/>}/>
+                        <Route path='/messages' element={<Messages
+                            messages={state.messagesPage.messages}
+                            contacts={state.messagesPage.contacts}
+                        />}/>
                         <Route path='/music' element={<Music/>}/>
                         <Route path='/image' element={<Image/>}/>
                         <Route path='/video' element={<Video/>}/>
