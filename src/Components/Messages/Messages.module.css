@@ -1,19 +1,17 @@
-.chatroom{
-    display: grid;
-    grid-area: content;
-    grid-template-columns: 1fr 1fr;
-
+.chatroom {
+	display: grid;
+	grid-area: content;
+	grid-template-columns: 1fr 1fr;
 }
-.contact{
-    text-decoration: none;
+.contact {
+	text-decoration: none;
 }
 .ul {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-gap: 1vw;
-    font-size: 1.5vw;
-    padding: 1.5em;
-    border: 2px solid;
-    border-radius: 10px;
-
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-gap: 1vw;
+	font-size: 1.5vw;
+	padding: 1.5em;
+	border: 2px solid;
+	border-radius: 10px;
 }
